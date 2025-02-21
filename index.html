@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  
+ 
+
+
+
+
+</head>
+<body class="bg-slate-100">
+  <header>
+   
+    <div class="navbar  w-full h-20 bg-white shadow-xl flex justify-between items-center px-6 md:fixed md:top-0 md:left-0">
+      
+      <div class="flex  md:w-[50%] items-center justify-between text-2xl">
+         <div class="md:hidden "><i class="fa-solid fa-bars"></i></div>
+         <div class="logo ml-10  "><a href=""><img  class="h-20 w-fit rounded  " src="img/flp.logo.png" alt=""></a>
+
+         </div>
+         <div class="search-panel w-[548px] bg-slate-200  rounded-xl md:block hidden">
+          <div class="flex py-2 ">
+           <div class="w-12 text-2xl flex justify-center items-center "><i class="fa-solid fa-magnifying-glass"></i></div>
+           <div class=" "> <input class="w-[500px] py-2  bg-slate-200 " type="search" placeholder="Search for Products,Brands and More"></div>
+          </div>
+        </div>
+        </div>
+
+
+      <div class="panel-2  w-[50%] flex items-center justify-around cursor-pointer text-2xl">
+        <div class="mobile block md:hidden text-center">
+          <i class="fa-solid fa-mobile"></i>
+
+        </div>
+        <div class="profile flex md:space-x-4  space-x-3 items-center">
+          <i class="fa-solid fa-user"></i>
+          <select class="hidden md:block"> <option value="">Login</option></select>
+
+        </div>
+        <div class="cart flex items-center space-x-4">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="#" class="hidden md:block">Cart</a>
+        </div>
+
+        <div class="gift hidden md:block ">
+          <div class="flex items-center space-x-3">
+          <i class="fa-solid fa-gift"></i>
+          <p class=" ">Become a Seller</p>
+         </div>
+        </div>
+
+        <div class="3dots hidden md:block"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      </div>
+
+
+    </div>
+   
+  </header>
+   
+  <section class="mt-4 bg-white shadow-lg md:h-72  md:flex md:justify-center md:items-center md:mt-16  ">
+  <div class="cards-container w-full flex  flex-wrap gap-4 justify-center ">
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-1.webp" alt="">
+      <p class="text-center text-xl font-semibold">Top Offer</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-2.webp" alt="">
+      <p class="text-center text-xl font-semibold">Mobile & Tablets</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-3.webp" alt="">
+      <p class="text-center text-xl font-semibold">TVs & Appliances</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-4.webp" alt="">
+      <p class="text-center text-xl font-semibold">Electronics</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-5.webp" alt="">
+      <p class="text-center text-xl font-semibold">Fashion</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md   ">
+      <img src="img/f-6.webp" alt="">
+      <p class="text-center text-xl font-semibold">Beauty,Food</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-7.webp" alt="">
+      <p class="text-center text-xl font-semibold">Home & Kitchen</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-8.webp" alt="">
+      <p class="text-center text-xl font-semibold">Travel</p>
+    </div>
+
+    <div class="card   h-52 w-36  flex flex-col space-y-2 shadow-lg rounded-md ">
+      <img src="img/f-9.webp" alt="">
+      <p class="text-center text-xl font-semibold">Grocery</p>
+    </div>
+
+
+    
+
+  </div>
+</section>
+
+<!-- <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+   
+    <div class="swiper-slide bg-white rounded-lg  p-5 m-2 shadow-md">
+      <img src="product--1.jpeg " alt="">
+      <h2 class="text-xl font-semibold">Card 1</h2>
+      <p>Card 1 description here.</p>
+    </div>
+
+     
+     <div class="swiper-slide bg-white rounded-lg  p-5 m-2 shadow-md">
+      <img src="product--2.jpeg " alt="">
+      <h2 class="text-xl font-semibold">Card 1</h2>
+      <p>Card 1 description here.</p>
+    </div>
+
+
+     <div class="swiper-slide bg-white rounded-lg  p-5 m-2 shadow-md">
+      <img src="product--3.jpeg " alt="">
+      <h2 class="text-xl font-semibold">Card 1</h2>
+      <p>Card 1 description here.</p>
+    </div>
+
+
+   
+     <div class="swiper-slide bg-white rounded-lg  p-5 m-2 shadow-md">
+      <img src="product--4.jpeg " alt="">
+      <h2 class="text-xl font-semibold">Card 1</h2>
+      <p>Card 1 description here.</p>
+    </div>
+
+
+   
+     <div class="swiper-slide bg-white rounded-lg  p-5 m-2 shadow-md">
+      <img src="product--5.peg " alt="">
+      <h2 class="text-xl font-semibold">Card 1</h2>
+      <p>Card 1 description here.</p>
+    </div>
+   
+  </div>
+</div>
+
+<script>const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+</script> -->
+
+
+<div class="relative">
+  <div class="flex justify-center">
+    <div class="w-full ">
+      <div class="relative">
+        <div class="slider">
+          <img src="img/fb-1.webp" alt="Image 1" class="w-full md:h-[400px] h-[200px] object-cover">
+          <img src="img/fb-2.webp" alt="Image 2" class="w-full md:h-[400px] h-[200px] object-cover hidden">
+          <img src="img/fb-3.webp" alt="Image 3" class="w-full md:h-[400px] h-[200px] object-cover hidden">
+          <img src="img/fb-4.webp" alt="Image 2" class="w-full md:h-[400px] h-[200px] object-cover hidden">
+          <img src="img/fb-5.webp" alt="Image 3" class="w-full md:h-[400px] h-[200px] object-cover hidden">
+        </div>
+        <div class="absolute w-full md:top-48  top-20 flex justify-between items-center  ">
+          <button class="   bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <i class=" text-4xl fa-solid fa-less-than"></i>
+          </button>
+          <button class=" bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <i class=" text-4xl fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const slider = document.querySelector('.slider');
+const images = slider.querySelectorAll('img');
+let currentIndex = 0;
+
+setInterval(() => {
+  images[currentIndex].classList.add('hidden');
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].classList.remove('hidden');
+}, 3000);
+
+document.querySelectorAll('button').forEach((button) => {
+  button.addEventListener('click', () => {
+    if (button.textContent === 'Prev') {
+      images[currentIndex].classList.add('hidden');
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      images[currentIndex].classList.remove('hidden');
+    } else {
+      images[currentIndex].classList.add('hidden');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.remove('hidden');
+    }
+  });
+});
+
+
+</script>
+
+
+<div class="img-sec my-5 h-full">
+  <div>
+    <img src="img/bigimg.webp" alt="">
+  </div>
+  <div class="flex  gap-1 flex-wrap">
+    <div> <img src="img/2big.webp" alt=""></div>
+    <div> <img src="img/3rdbig.webp" alt=""></div>
+    <div> <img src="img/4thBig.webp" alt=""></div>
+  </div>
+  
+  <div class="  flex  gap-1 flex-wrap">
+    <div> <img src="img/5.webp" alt=""></div>
+    <div> <img src="img/6.webp" alt=""></div>
+    <div> <img src="img/7.webp" alt=""></div>
+  </div>
+
+  <div class=" my-2 flex  justify-between flex-wrap">
+    <div> <img src="img/card-1.webp" alt=""></div>
+    <div> <img src="img/card-2.webp" alt=""></div>
+    <div> <img src="img/card-3.webp" alt=""></div>
+  </div>
+
+  <div class=" my-2 flex  justify-between flex-wrap">
+    <div> <img src="img/ard-4.webp" alt=""></div>
+    <div> <img src="img/card-5.webp" alt=""></div>
+    <div> <img src="img/card-6.webp" alt=""></div>
+  </div>
+
+  </div>
+
+<div class="w-full h-[100%] bg-white shadow-xl">
+  <div class="pt-4 px-4">
+    <h1 class="text-2xl font-semibold ">Premium Products</h1>
+  </div>
+  <div class="button flex justify-between  items-center relative top-32">
+    <button class="text-xl font-bold py-1 bg-blue-100 px-2">prev</button>
+    <button class="text-xl font-bold py-1 bg-blue-100 px-2">next</button>
+  </div>
+
+  <div class="cards-container flex flex-col md:flex-row items-center  md:justify-center gap-4 static cursor-pointer">
+    <div class="card w-72  h-72 flex flex-col  overflow-hidden justify-around shadow-xl static">
+      <img  class="w-full bg-cover hover:scale-105" src="img/product--1.jpeg" alt="">
+      <h1 class="text-xl font-bold text-center my-2">Product</h1>
+      <P class="text-lg font-medium px-4">Good rate & top computer</P>
+    </div>
+
+
+    <div class="card w-72  h-72 flex flex-col  overflow-hidden justify-around shadow-xl static">
+      <img  class="w-full bg-cover hover:scale-105" src="img/product--2.jpeg" alt="">
+      <h1 class="text-xl font-bold text-center my-2">Product</h1>
+      <P class="text-lg font-medium px-4">Good rate & top computer</P>
+    </div>
+
+
+
+    <div class="card w-72  h-72 flex flex-col  overflow-hidden justify-around shadow-xl static">
+      <img  class="w-full bg-cover hover:scale-105" src="img/product--3.jpeg" alt="">
+      <h1 class="text-xl font-bold text-center my-2">Product</h1>
+      <P class="text-lg font-medium px-4">Good rate & top computer</P>
+    </div>
+
+    <div class="card w-72  h-72  flex flex-col  overflow-hidden justify-around shadow-xl static">
+      <img  class="w-full bg-cover hover:scale-105" src="img/product--4.jpeg" alt="">
+      <h1 class="text-xl font-bold text-center my-2">Product</h1>
+      <P class="text-lg font-medium px-4">Good rate & top computer</P>
+    </div>
+
+    <div class="card w-72  h-72 flex flex-col  overflow-hidden justify-around shadow-xl static">
+      <img  class="w-full bg-cover hover:scale-105" src="img/product--5.png" alt="">
+      <h1 class="text-xl font-bold text-center my-2">Product</h1>
+      <P class="text-lg font-medium px-4">Good rate & top computer</P>
+  </div> 
+ </div>
+</div>  
+
+
+
+<footer class="">
+  <div class="footer-container w-full  bg-blue-950 text-white flex justify-between p-12 flex-wrap">
+   <div class="panel-1 flex flex-col">
+    <P class="text-xl font-bold text-slate-400 my-2">ABOUT</P>
+    <div class="flex flex-col my-4 text-lg font-medium">
+    <a  class="hover:underline " href="#">Contact us</a>
+    <a  class="hover:underline " href="#">About us</a>
+    <a  class="hover:underline " href="#">Career</a>
+    <a  class="hover:underline " href="#">Flipkart stories</a>
+    <a  class="hover:underline " href="#">Press</a>
+    <a  class="hover:underline " href="#">Corporate information</a>
+    </div>
+   </div>
+
+
+   <div class="panel-2 flex flex-col">
+    <div class="flex flex-col my-2 text-lg font-medium  ">
+    <P class="text-xl font-bold text-slate-400  ">GROUP COMPANIES</P>
+    <div class="flex flex-col py-5">
+      <a  class="hover:underline "  href="#">Myntra</a>
+      <a  class="hover:underline "  href="#">Cleartrip</a>
+      <a  class="hover:underline "  href="#">Shopsy</a>
+    </div>
+ 
+  </div>
+  </div>
+
+  <div class="panel-3">
+    <P class="text-xl font-bold text-slate-400 my-2">HELP</P>
+    <div class="flex flex-col my-4 text-lg font-medium">
+  
+    <a class="hover:underline " href="#">Payments</a>
+    <a class="hover:underline " href="#">shipping</a>
+    <a class="hover:underline " href="#">Cancellation</a>
+    <a class="hover:underline " href="#">FAQ</a>
+    <a class="hover:underline " href="#">Report Infringement</a>
+    </div>
+   </div>
+
+
+
+   <div class="panel-4">
+    <p class="text-xl font-bold text-slate-400 my-2">COSTUMER POLICY</p>
+    <div class="flex flex-col my-4 text-lg font-medium">
+    <a class="hover:underline" href="#">Cancel & Returns</a>
+    <a class="hover:underline" href="#">Terms of Use</a>
+    <a class="hover:underline" href="#">Security</a>
+    <a class="hover:underline" href="#">Privacy</a>
+    <a class="hover:underline" href="#">Sitemap</a>
+    <a class="hover:underline" href="#">Grievance Redressal</a>
+    <a class="hover:underline" href="#">EPR Compliance</a>
+    </div>
+    </div>
+
+
+    <div class="panel-5">
+      <div class="text-md font-medium ">
+        <h1 class="text-xl font-bold text-slate-400 my-3">Mail us:</h1>
+      <p>Flipkart Internet Private Limited,</p>
+      <p>Bulidings Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer RIng Road,Devarabeesanhalli Village</p>
+      <p>Bengaluru, 560103,</p>
+      <p>Karnataka,India</p>
+      </div>
+
+      <div class="socail">
+        <p class="text-xl font-bold text-slate-400 my-4">social:-</p>
+        
+          <ul class="text-3xl space-x-6 overflow-hidden flex ">
+            <li class="hover:scale-105"><i class="  fa-brands fa-instagram"></i></li>
+            <li class="hover:scale-105"><i class="  fa-brands fa-facebook"></i></li>
+            <li class="hover:scale-105"><i class="  fa-brands fa-twitter"></i></li>
+  
+          </ul>
+        
+          
+      </div>
+    </div>
+
+
+    <div class="panel-6  text-md font-medium ">
+      <h1 class="text-xl font-bold text-slate-400 my-3">Register Office Address</h1>
+
+      <p>Flipkart Internet Private Limited,</p>
+      <p>Bulidings Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer RIng Road,Devarabeesanhalli Village</p>
+      <p>Bengaluru, 560103,</p>
+      <p>Karnataka,India</p>
+    </div>
+   </div>
+   
+  <footer-2>
+    <div class="h-12 w-full flex items-center justify-center text-lg bg-black text-white ">
+      &copy;2007-2024 Flipkart.com
+    </div>
+  </footer-2>
+
+  
+</footer>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
